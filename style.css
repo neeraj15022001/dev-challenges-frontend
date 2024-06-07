@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("https://images.indianexpress.com/2023/11/western-ghats.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+#thunderstorm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.raindrop {
+  position: absolute;
+  background-image: linear-gradient(to bottom, #0036, rgb(173, 220, 244));
+  width: 2px;
+  height: 20px;
+  opacity: 0;
+  transform: rotate(-25deg);
+}
+
+#lightning {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #eef;
+  opacity: 0;
+}
+
+.location-label {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0.5rem 0 0 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1rem 2rem;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.location-label > .title {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.location-label > .subtitle {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.location-label > .caption {
+  color: white;
+  font-size: 0.7rem;
+}
